@@ -1,0 +1,48 @@
+.personalphoto{
+  border-radius: 50%;
+}
+.social-icon path{
+  margin-top: 60px;
+  padding-right: 25px;
+  float: left;
+  fill: black;
+  
+}
+.btn-circle.btn-xl { 
+            width: 70px; 
+            height: 70px; 
+            padding: 10px 16px; 
+            border-radius: 35px; 
+            font-size: 12px; 
+            text-align: center; 
+        } 
+        #name
+{
+  background-color:  chartreuse;
+  font-size: x-large;
+  
+}
+#email
+{
+  background-color:Lightcyan;
+  font-size: x-large;
+}
+#suggestion
+{
+  background-color: Linen;
+  font-size: x-large;
+}
+#contactme
+{
+  font-family: "Sofia";
+  font-size: 42px;
+
+}
+#send
+{
+  font-size: x-large;
+}
+#mineinfo
+{
+  font-family: "Merienda One";
+}
