@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    Varchasa Aggarwal</title>
+
+  <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='/styles/main.css') }}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src=  "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">   </script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Sofia|Cedarville Cursive|Marck Script|Merienda One|Vast Shadow|Work Sans|Niconne|Pacifico|Kaushan Script|Capriola|Source Code Pro">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .personalphoto{
+  border-radius: 50%;
+}
+.social-icon path{
+  margin-top: 60px;
+  padding-right: 25px;
+  float: left;
+  fill: black;
+  
+}
+.btn-circle.btn-xl { 
+            width: 70px; 
+            height: 70px; 
+            padding: 10px 16px; 
+            border-radius: 35px; 
+            font-size: 12px; 
+            text-align: center; 
+        } 
+        #name
+{
+  background-color:  chartreuse;
+  font-size: x-large;
+  
+}
+#email
+{
+  background-color:Lightcyan;
+  font-size: x-large;
+}
+#suggestion
+{
+  background-color: Linen;
+  font-size: x-large;
+}
+#contactme
+{
+  font-family: "Sofia";
+  font-size: 42px;
+
+}
+#send
+{
+  font-size: x-large;
+}
+#mineinfo
+{
+  font-family: "Work Sans";
+}
+#projecthand
+{
+  font-family: "Pacifico";
+  font-size: 22px;
+}
+#articlehand
+{
+  font-family: "Capriola";
+}
+#expinfo
+{
+  font-family: "Source Code Pro";
+}
+body {
+  line-height: 1;
+  text-align: center;
+  overflow-x: hidden;
+}
+</style>
+
+
+</head>
+
+
+
+<body>
+<!-- navbar-->
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="../static/img/logo2.jpg" width="40" height="40" class="d-inline-block align-top" alt="varchasa">
+       Varchasa Aggarwal. 
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+    
+          <li class="nav-item active">
+            <a class="nav-link" href="#aboutme">ABOUT ME <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#article">ARTICLES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">PROJECT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certificate">CERTIFICATIONS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#badges">BADGES</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#skill">SKILLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#exp">EXPERIENCE</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+    </ul>
+    
+        
+      </div>
+  </nav>
+
+<!--navbar ends-->
+
+<!--intoductions-->
+<header>
+          
+    <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+      <div class="mask rgba-gradient align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
+              <h1 class="h1-responsive font-weight-bold mt-sm-5">Hi folks ! Varchasa Aggarwal here .. </h1>
+              <hr class="hr-light">
+              <h4 class="mb-4" id="mineinfo">My portfolio is a representation of all that I've learned and accomplished as a final year engineering student.</h4>
+              
+              <!--social icons-->
+              <div class="container">
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/varchasaaggarwal06/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill="currentColor" fill-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+                <br>
+      
+                <div class="social-icon">
+                    <a href="https://github.com/varchasa" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" fill="currentColor" fill-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+                <br>
+                
+
+              <div class="social-icon">
+              <a href="https://twitter.com/VarchasaA" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                      <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" fill="currentColor" fill-rule="evenodd"></path>
+                  </svg>
+              </a>
+          </div>
+            <br>
+          <div class="social-icon">
+              <a href="https://medium.com/@varchasaaggarwal" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                      <path d="M19 24h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5v14c0 2.761-2.237 4.999-5 5zm.97-5.649v-.269l-1.247-1.224c-.11-.084-.165-.222-.142-.359v-8.998c-.023-.137.032-.275.142-.359l1.277-1.224v-.269h-4.422l-3.152 7.863-3.586-7.863h-4.638v.269l1.494 1.799c.146.133.221.327.201.523v7.072c.044.255-.037.516-.216.702l-1.681 2.038v.269h4.766v-.269l-1.681-2.038c-.181-.186-.266-.445-.232-.702v-6.116l4.183 9.125h.486l3.593-9.125v7.273c0 .194 0 .232-.127.359l-1.292 1.254v.269h6.274z" fill="currentColor" fill-rule="evenodd"></path>
+                  </svg>
+              </a>
+          </div>
+          </div>
+    </div>
+            
+            <div class="col-md-6 col-xl-5 mt-xl-5 wow fadeInRight" data-wow-delay="0.3s">
+              <img src="../static/img/varchasa2.jpeg" alt="varchasa" class="personalphoto">
+            </div>
+              </div>
+        </div>
+      </div>
+        </div>
+    
+  </header>
+  <!--intro ends-->
+  <br>
+  <center>
+<!--about me -->
+<div id="aboutme">
+  <div class="jumbotron jumbotron-fluid" >
+  <div class="container">
+    <h1 class="display-4" style="font-family:Copperplate">About ME ! </h1>
+    <h2 class="lead"><b>I am a self-learner, blogger, tech-enthusiast and moreover a computer 
+        science engineering student working in tech related fields like data science and machine learning.</b></h2>
+    <p class="lead"><i class="fas fa-utensils">About my education, I have completed my B.Tech in computer science and engineering with an aggregate of 80% from RD Engineering College, AKTU</i></h3>
+    <br>
+    <br>
+    <a type="button" href="https://drive.google.com/file/d/1O0Q2nYy06NBklsPdAZrN2hg3N5fik9iC/view?usp=sharing" target="_blank"class="btn btn-warning btn-lg btn-block">VIEW RESUME</button>
+    </a>
+      
+ </div>
+    </div>
+</div>
+</center>
+
+    
+
+<!--Section: articles-->
+<br id="article" >
+<section class="text-center py-5">
+	<div class="animated flash">
+    <div class="container" >
+        <h2 class="h1-responsive font-weight-bold mb-5">Articles</h2>
+        <div class="row">
+
+            <div class="col-lg-4 col-md-12 mb-4">
+                <div class="card card-cascade narrower">
+                    <div class="view view-cascade overlay">
+                        <img class="card-img-top" src="../static/img/embedding.jpg"
+                            alt="Card image cap" >
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <div class="card-body card-body-cascade" id="articleani">
+                    <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"> Embedding multiple dash app in a single flask application</i></h5>
+                        <a class="btn btn-primary" href="https://medium.com/@varchasaaggarwal/embedding-multiple-dash-app-in-a-single-flask-application-f1bf9e938a9e" target="_blank">Click to read</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card card-cascade narrower">
+                    <div class="view view-cascade overlay">
+                        <img class="card-img-top" src="../static/img/motivation.jpg" alt="Card image cap"><a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <div class="card-body card-body-cascade">
+                        <h5 class="pink-text pb-2 pt-1" id="articleshand"><i class="fas fa-utensils">Self Motivation — Dream it. Believe it. Build it.</i></h5>
+                        <a class="btn btn-danger" href="https://medium.com/@varchasaaggarwal/self-motivation-dream-it-believe-it-build-it-5217f1278d15" target="_blank">Click to read</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card card-cascade narrower">
+                    <div class="view view-cascade overlay">
+                        <img class="card-img-top" src="../static/img/images.jpg"
+                            alt="Card image cap">
+                            <div class="mask rgba-white-slight"></div></a>
+                    </div>
+                    <div class="card-body card-body-cascade">
+                        <h5 class="pink-text pb-2 pt-1" id="articleshand"><i class="fas fa-utensils">Positive - selfTalk</i></h5>
+                        <a class="btn btn-warning" href="https://medium.com/@varchasaaggarwal/positive-self-talk-7c2d83a93e9" target="_blank">Click to read</a>
+                    </div>
+                </div>
+            </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card card-cascade narrower">
+                        <div class="view view-cascade overlay">
+                            <img class="card-img-top" src="../static/img/crypt.jpg"
+                                alt="Card image cap">
+                                <a><div class="mask rgba-white-slight"></div></a>
+                        </div>
+                       <div class="card-body card-body-cascade">
+                            <h5 class="pink-text pb-2 pt-1" id="articleshand"><i class="fas fa-utensils">Cryptocurrency </i> </h5>
+                            <a  class="btn btn-dark" href="https://cryptopython.blogspot.com/2020/06/cryptography-using-python.html" target="_blank">Click to read</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card card-cascade narrower">
+                        <div class="view view-cascade overlay">
+                            <img class="card-img-top" src="../static/img/dashpython1.jpg"
+                                alt="Card image cap">
+                            <a><div class="mask rgba-white-slight"></div></a>
+                        </div>
+                        <div class="card-body card-body-cascade">
+                            <h5 class="pink-text pb-2 pt-1" id="articleshand"><i class="fas fa-utensils">Python Dash</i> </h5>
+                            <a class="btn btn-secondary" href="https://pythondash.blogspot.com/2020/05/about-dash.html" target="_blank">Click to read</a>
+                        </div></div></div>
+
+                        <div class="col-lg-4 col-md-12 mb-4">
+                          <div class="card card-cascade narrower">
+                              <div class="view view-cascade overlay">
+                                  <img class="card-img-top" src="../static/img/gpt.jpg" alt="Card image cap" >
+                                      <div class="mask rgba-white-slight"></div>
+                                  </a>
+                              </div>
+                              <div class="card-body card-body-cascade">
+                              <h5 class="pink-text pb-2 pt-1" id="articleshand"><i class="fas fa-utensils">What is GPT-3 The Next Revolution AI ?</i></h5>
+                                  <a class="btn btn-primary" href="https://medium.com/@varchasaaggarwal/what-is-gpt-3-the-next-revolution-ai-434b47bbd406" target="_blank">Click to read</a>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col-lg-4 col-md-12 mb-4">
+                        <div class="card card-cascade narrower">
+                            <div class="view view-cascade overlay">
+                                <img class="card-img-top" src="../static/img/gmail.png" alt="Card image cap" >
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                            <div class="card-body card-body-cascade">
+                            <h5 class="pink-text pb-2 pt-1" id="articleshand"><i class="fas fa-utensils">Sending Email via Flask app to Gmail</i></h5>
+                                <a class="btn btn-success" href="https://medium.com/@varchasaaggarwal/sending-email-via-flask-app-to-gmail-82cfca7922ec" target="_blank">Click to read</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                      
+                      </div></div></div>
+</section>
+
+<br id="project">
+<section class="text-center py-5">
+    <div class="animated flash">
+        <div class="container">
+                <h2 class="h1-responsive font-weight-bold mb-5">Projects</h2>
+        <!--Sentiment analysis-->
+        <div class="row">
+
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card border-warning mb-3" style="max-width: 20rem;">
+                <div class="card-header">Developed in 2020</div>
+                <div class="card-body text-warning">
+                  <a href="https://github.com/varchasa/Portfolio" target="_blank" class="text-warning">
+                  <h5 class="card-title" id="projecthand">Personal Portfolio</h5>
+                  </a>
+                  <p class="card-text text-dark">Created Personal portfolio using flask. 
+                    Contained all the information like project details, certifications, articles etc.</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card border-dark mb-3" style="max-width: 20rem;">
+              <div class="card-header">Developed in 2020</div>
+              <div class="card-body text-info">
+                <a href="https://github.com/varchasa/contactform_flask" class="text-info" target="_blank">
+                <h5 class="card-title" id="projecthand">Contact form created using flask</h5></a>
+                <p class="card-text text-dark">Short contact form created using flask and python. Sending data directly into gmail.</p>
+              </div>
+            </div>
+          </div>
+
+            <div class="col-lg-4 col-md-12 mb-4">
+                <div class="card border-primary mb-3" style="max-width: 20rem;">
+                    <div class="card-header">Developed in 2020</div>
+                    <div class="card-body text-primary">
+                      <a href="https://github.com/varchasa/IBM_Hackathon_smartInternz" target="_blank" class="text-primary">
+                      <h5 class="card-title" id="projecthand">Sentiment Analysis of COVID-19 Tweets</h5>
+                      </a>
+                      <p class="card-text text-dark">Build Predictive analytics dashboard of COVID-19 tweets along with lockdown response of different states of India.</p>
+                    </div>
+                  </div>
+              </div>
+
+        <!--happiness report-->
+        <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card border-light mb-3" style="max-width: 20rem;">
+                <div class="card-header">Developed in 2020</div>
+                <div class="card-body">
+                  <a href="https://github.com/varchasa/World_happiness_report" target="_blank" class="text-dark">
+                  <h5 class="card-title" id="projecthand">World Happiness Report</h5></a>
+                  <p class="card-text text-dark">Showed analysis of world happiness report of different types of parameters. </p>
+                </div>
+              </div>
+        </div>
+
+        <!--covid analysis using dash-->
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card border-success mb-3" style="max-width: 20rem;">
+            <div class="card-header">Developed in 2020</div>
+            <div class="card-body text-success">
+              <a href="https://github.com/varchasa/DASH-covid-analysis-per-day/blob/master/covidbydate.py" target="_blank" class="text-success">
+              <h5 class="card-title" id="projecthand">COVID analysis per day</h5></a>
+              <p class="card-text text-dark">Created a bar graph on analysis of covid cases per day using <b>Dash</b> framework. </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card border-danger mb-3" style="max-width: 20rem;">
+            <div class="card-header">Developed in 2020</div>
+            <div class="card-body text-danger">
+              <a href="https://github.com/varchasa/state-wise-zones-of-covid-19" target="_blank" class="text-danger">
+              <h5 class="card-title" id="projecthand">State wise zones of COVID-19</h5></a>
+              <p class="card-text text-dark">Just made a state wise graph distribution of all zones(red,orange and green) of COVID-19.</p>
+            </div>
+          </div>
+              
+        </div>
+
+        <div class="col-lg-4 col-md-12 mb-4">
+
+          <div class="card border-secondary mb-3" style="max-width: 20rem;">
+            <div class="card-header">Developed in 2019</div>
+            <div class="card-body text-secondary">
+              <a href="https://github.com/varchasa/disease_prediction" target="_blank" class="text-secondary">
+              <h5 class="card-title" id="projecthand">Disease prediction using Machine learning</h5></a>
+              <p class="card-text text-dark">Machine learning based applicatiion based on predicting disease from the symptoms.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card border-warning mb-3" style="max-width: 20rem;">
+            <div class="card-header">Developed in 2019</div>
+            <div class="card-body text-warning">
+              <a href="https://github.com/varchasa/YouTube-Spam-Comments" target="_blank" class="text-warning">
+              <h5 class="card-title" id="projecthand">Youtube Spam comments</h5></a>
+              <p class="card-text text-dark">Predicts the youtube comment is spam or not.</p>
+            </div>
+          </div>
+              
+        </div>
+
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card border-dark mb-3" style="max-width: 20rem;">
+            <div class="card-header">Developed in 2018</div>
+            <div class="card-body text-dark">
+              <a href="https://github.com/varchasa/ChatBot" class="text-dark" target="_blank">
+              <h5 class="card-title" id="projecthand">Chatbot</h5></a>
+              <p class="card-text text-dark">Developed a intelligent bot through which you can communicate every aspect.</p>
+            </div>
+          </div>
+              
+        </div>
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card border-dark mb-3" style="max-width: 20rem;">
+            <div class="card-header">Developed in 2018</div>
+            <div class="card-body text-info">
+              <a href="https://github.com/varchasa/P.A.-of-your-computer" class="text-info" target="_blank">
+              <h5 class="card-title" id="projecthand">Personal Assistant of your computer</h5></a>
+              <p class="card-text text-dark">This AI Assistant can perform several tasks like opening and closing any application of your computer with voice command.</p>
+            </div>
+          </div>
+              
+        </div>
+
+            </div><!--row-->
+            </div>
+            
+
+    </div>
+    <!-- Container -->
+
+</section>
+
+<!--Section: certificate-->
+<br id="certificate">
+<section class="text-center py-5">
+  <h2 class="h1-responsive font-weight-bold mb-5">Certifications</h2>
+  <div class="card-columns" >
+    
+    <!--IBMHC-->
+    <div class="card">
+      <a href="https://drive.google.com/file/d/1Aip89XfPKz2pua9oMsO3i9og5jKyFHoJ/view?usp=sharing" target="_blank">
+      <img class="card-img-top" src="../static/img/ibmhack.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">IBM Hack Challenge 2020</h5>
+        <p class="card-text">Certificate of completing the hack.</p>
+      </div>
+      </a>
+    </div>
+
+
+    <!--FUTURE OF AI-->
+    <div class="card bg-warning text-black text-center p-3">
+      <a href="https://drive.google.com/file/d/1Nb4ZELyrzuRhQYa-cGErE0GktTtHtGMD/view" target="_blank">
+      <blockquote class="blockquote mb-0 card-body">
+        <p>Future of AI by IETE-PANTECH</p>
+        <footer class="blockquote-footer">
+          <small class="text-muted">
+            IETE-PANTECH
+          </small>
+        </footer>
+      </blockquote>
+      </a>
+    </div>
+
+<!--iMPECCABLE-->
+    <div class="card text-dark  text-center p-3">
+      <div class="card-body">
+        
+        <h5 class="card-title">Impeccable Academy</h5>
+        <a href="https://drive.google.com/file/d/16DRi5yO4uvujyfyvwa7UlLAL7j3hsTeh/view" target="_blank" class="text-warning">
+        <p class="card-text"><b>Completed the course of Python Programming.</b></p>
+        </a>
+      </div>
+    </div>
+
+    
+    
+    <!--iitdelhi-->
+    <div class="card text-black text-center p-3">
+      <div class="card-body">
+        
+        <h5 class="card-title" >IIT Delhi Robotech Labs</h5>
+        
+        <a href="https://drive.google.com/file/d/1B9XofjfrTZ9Bhaxo5e1TfvNT_Lr7vU8q/view" target="_blank" class="text-info">
+        <b><p class="card-text">Certificate of Machine Learning and AI Workshop </p></b>
+        </a>
+      </div>
+    </div>
+
+    
+
+    <!--TCS-->
+    <div class="card">
+    
+      <img class="card-img-top" src="../static/img/tcs.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">TCS ASCEND CERTIFICATIONS</h5>
+        <a href="https://drive.google.com/file/d/1mdI5UqDslDVXYzfhzv_sJ915ryFped-b/view" target="_blank">
+          <p class="card-text">Course completed of machine learning</p></a>
+          <a href="https://drive.google.com/file/d/15tGrf6napGohPcb3zxBHvcPp5Z6_qVID/view" target="_blank">
+          <p class="card-text">Course completed of python web with flask concepts</p></a>
+          <a href="https://drive.google.com/file/d/18s87D5Y1IDpbsgR_xDjHjqGY7_eX2cAm/view?usp=sharing" target="_blank"></a>
+          <p class="card-text">Course completed of Microservices of python flask</p>
+        
+      </div>
+    </div>
+
+    <!--hACKERANK-->
+    <div class="card bg-primary text-dark text-center p-3">
+      <a href="https://www.hackerrank.com/certificates/c6135ec5d698" target="_blank" class="text-white bg-dark">
+      <blockquote class="blockquote ">
+        <p>HackerRank skill test of Python(Basic)</p>
+        <footer class="blockquote-footer">
+          <small>
+            By HackerRank
+          </small>
+        </footer>
+      </blockquote></a>
+    </div>
+
+    <div class="card text-dark text-center p-3">
+      <a href="https://www.hackerrank.com/certificates/3bd0938aa390" target="_blank" class="text-danger">
+      <blockquote class="blockquote ">
+        <p><b>HackerRank skill test of Python(Intermediate)</b></p>
+        <footer class="blockquote-footer">
+          <small>
+            By HackerRank
+          </small>
+        </footer>
+      </blockquote></a>
+    </div>
+
+    <!--SOFTPRO-->
+    <div class="card text-center p-3">
+      <a href="https://drive.google.com/file/d/1bXpGMkRlc5myZRaw7_k50uigOM6Ufg5x/view" target="_blank" class="text-dark bg-light">
+      <blockquote class="blockquote ">
+        <p>Attended python workshop organised by Softpro India.</p>
+        <footer class="blockquote-footer">
+          <small>
+            By SOFTPRO INDIA
+          </small>
+        </footer>
+      </blockquote></a>
+    </div>
+
+    <!--Spoken-->
+    <div class="card text-center p-3">
+      <a href="https://drive.google.com/file/d/1PZmdyaCWcfpdazsJ2_kFnlfMVQjYjKh7/view?usp=sharing" target="_blank" class="text-secondary">
+      <blockquote class="blockquote ">
+        <b><p style="color:coral">Completed Python training</p></b>
+        <footer class="blockquote-footer">
+          <small>
+            By SPOKEN TUTORIAL
+          </small>
+        </footer>
+      </blockquote></a>
+    </div>
+    
+<!--Techig-->
+    <div class="card text-black text-center p-3">
+      <div class="card-body">
+        <h5 class="card-title">TECHGIG CODING COMPETITIONS</h5>
+        <a class="text-info" href="https://drive.google.com/file/d/1p8S3JEhedk5UAj8KXEd0raUJFOW45i_J/view?usp=sharing" target="_blank">
+        <b><p class="card-text">Open round techgig</p></a></b>
+        <a class="text-info" href="https://drive.google.com/file/d/1u50gIJtND_wPSvaeSmtOOpJhO140OYBu/view?usp=sharing" target="_blank">
+        <b><p class="card-text">Techgig feburary code war</p></a></b>
+      </div>
+      </a>
+    </div>
+
+
+
+    <!--IBM-->
+    <div class="card">
+      <img class="card-img-top" src="../static/img/ibm.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">IBM COGNITIVE CLASS CERTIFICATIONS</h5>
+        <a href="https://drive.google.com/file/d/1cJT1yc7_gVtbq-PGmPK_iCErmxQU9hCE/view" target="_blank">
+        <p class="card-text">Python for data science</p></a>
+        <a href="https://drive.google.com/file/d/1geL0OYa9VTi6rnoHqdG400YazS598Uo2/view?usp=sharing" target="_blank">
+        <p class="card-text">Introduction to data science</p></a>
+        <a href="https://drive.google.com/file/d/12NeXtAApC7_i38wYDCOe0c7miFsSvq_T/view?usp=sharing" target="_blank">
+        <p class="card-text">Machine learning with python </p></a>
+      </div>
+    </div>
+
+    
+    
+    <!--KIET-->
+    <div class="card bg-secondary text-black text-center p-3">
+      <div class="card-body">
+        
+        <h5 class="card-title">KIET - INNOTECH 2K18</h5>
+        <a href="https://drive.google.com/file/d/16scT5xRpK_-7z-_6OHOxope4LRuf_hpU/view" target="_blank" class="text-white bg-dark">
+        <p class="card-text">Participated in Project Exhibition organised by KIET group of institutions. </p>
+        </a>
+      </div>
+    </div>
+
+    <!--letcon-->
+    <div class="card text-success text-center p-3">
+      <div class="card-body">
+        
+        <h5 class="card-title">LETCON CONFERENCE - ZUBI</h5>
+        <a href="https://drive.google.com/file/d/1S8wNhrVbJrHDozxos6GjYrTebIlOtPPb/view?usp=sharing" target="_blank" class="text-secondary">
+        <p class="card-text">Participated in 3-day emerging technology conference.</p>
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+  </section>
+<br>
+
+
+<!--BADGES-->
+
+<section>
+  <div class="card bg-dark" id="badges">
+    <center>
+    <h3 class="card-header text-light">BADGES</h3>
+    <div class="card-body">
+      <h4 class="card-title">
+        <a href="https://www.youracclaim.com/badges/1fb67221-04b0-4f75-b5e9-cd4453eee741?source=linked_in_profile" target="_blank" class="badge badge-primary">Data Science foundation</a>
+        <a href="https://www.youracclaim.com/badges/1e1f18ec-5c31-48ba-87bb-4b3ff2f00ea2?source=linked_in_profile" target="_blank" class="badge badge-secondary">Machine learning with Python</a>
+        <a href="https://www.youracclaim.com/badges/c43b3aed-4f01-4009-9766-69618a6f8041/linked_in_profile" target="_blank" class="badge badge-success">Python for data science</a>
+        <a href="https://www.youracclaim.com/badges/e60c2619-9155-4abd-bd36-a991024d641d?source=linked_in_profile" target="_blank" class="badge badge-danger">Enterprise Design Thinking</a>
+        <a href="https://www.hackerrank.com/varchasaaggarwal" target="_blank" class="badge badge-warning">Gold Badge for python</a>
+        <a href="https://www.hackerrank.com/varchasaaggarwal" target="_blank" class="badge badge-info">Silver badge for problem solving</a>
+        <a href="https://credly.com/credit/14243055" class="badge badge-light">Progressive web app developement and research</a>
+        
+
+
+      </h4>
+      
+    </div>
+    </center>
+  </div>
+  </section>
+  
+<!--skills-->
+
+<br id="skill">
+<section  class="text-center py-5">
+    <h2 class="h1-responsive font-weight-bold mb-51">Skills</h2>
+    <img src="../static/img/skills3.jpg" alt="skills">
+
+
+</section>
+
+<br id="exp">
+<section class="text-center py-5">
+  <h2 class="h1-responsive font-weight-bold mb-51">Experience</h2>
+  <div class="view" >
+    <div class="mask rgba-gradient align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
+            
+          
+            <h4 class="mb-4" id="expinfo">Completed engineering virtual internship program provided by Microsoft and Inside Sherpa(Forage). 
+              I learned basic values, work culture at Microsoft, how things are being carried out, corporate skills, life values, 
+              corporate values, business etiquettes, diversity at Microsoft, work ready skills, technical engineer skills etc.</h4>
+            
+            <!--social icons-->
+            <center>
+            <a class="btn btn-warning" href="https://drive.google.com/file/d/1hJvKN5QDKyhYAo5JA5jXzBGMJzkcD8bg/view?usp=sharing" target="_blank">View</a></center>
+          </div>
+          
+          <div class="col-md-6 col-xl-5 mt-xl-5 wow fadeInRight" data-wow-delay="0.3s">
+            <img src="../static/img/exp.jpg" alt="Experience with microsoft">
+          </div>
+            </div>
+      </div>
+    </div>
+      </div>
+  </section>
+
+
+
+<!-- Default form contact -->
+<section id="contact">
+  <div class="jumbotron">
+  <form action="{{url_for('send_message')}}" method="POST" class="text-center border border-light p-5">
+    <div class="view">
+      <!--style="background-image:url('../static/img/contact4.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;"-->
+    
+      <h1  class="display-4" id="contactme"><b>Contact ME</b></h1>
+
+      <input name="name" type="text" id="name" class="form-control mb-4" placeholder="Name" class="text-warning">
+      <input name="email" type="email" id="email" class="form-control mb-4" placeholder="E-mail">
+      
+      <div class="form-group">
+      <textarea name="suggestion" class="form-control rounded-0" id="suggestion" rows="3" placeholder="Message"></textarea>
+      </div>
+    
+      <div class="custom-control custom-checkbox mb-4">
+          <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+          
+      </div>
+      
+      <button type="submit" id="send" class="btn btn-warning btn-block" data-toggle="modal" data-target="#exampleModalCenter">
+        Send
+      </button>
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Contact Form details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Thanks for your resposne. 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    </form>
+    </div>
+    </section>
+
+  
+
+</body>
+</html>
