@@ -2,32 +2,15 @@
 <html lang="en">
 
 <head>
-	<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WD7B8SM');</script>
-	
-<!-- End Google Tag Manager -->
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179161820-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-179161820-1');
-</script>
   <title>
     Varchasa Aggarwal</title>
 
   <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='/styles/main.css') }}">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src=  "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">   </script>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Sofia|Cedarville Cursive|Marck Script|Merienda One|Vast Shadow|Work Sans|Niconne|Pacifico|Kaushan Script|Capriola|Source Code Pro">
@@ -36,25 +19,57 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="css/materialize.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
   <style>
-	  @media screen and (max-width: 667px) {
-    body {
-        overflow-x: hidden !important;
-    }
-    .container {
-        max-width: 100% !important;
-        overflow-x: hidden !important;
-    }
+        	.animate__animated.animate__flash {
+  --animate-duration: 2s;
 }
-  .personalphoto{
+.carousel-control-prev
+{
+	width: 400px;
+}
+.carousel-control-next
+{
+	width: 400px;
+}
+.carousel-control-prev,
+.carousel-control-next{
+        height: 50px;
+        width: 50px;
+        outline: color-white;
+        background-size: 100%, 100%;
+        border-radius: 50%;
+        border: 1px solid color-white;
+        background-color: color-white;
+    }
+
+    .carousel-control-prev-icon { 
+        background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); 
+        width: 30px;
+        height: 48px;
+    }
+    .carousel-control-next-icon { 
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+        width: 30px;
+        height: 48px;
+    }
+
+
+
+.personalphoto{
   border-radius: 50%;
+  height:auto;
+  max-width:100%;
 }
 .skillimg
 {
   height:auto;
   max-width:100%; 
 }
+
 .social-icon path{
   margin-top: 60px;
   padding-right: 25px;
@@ -69,7 +84,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             border-radius: 35px; 
             font-size: 12px; 
             text-align: center; 
-        } 
+} 
+
 #name
 {
   background-color:  chartreuse;
@@ -90,7 +106,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {
   font-family: "Sofia";
   font-size: 42px;
-
 }
 #send
 {
@@ -118,16 +133,31 @@ body {
   text-align: center;
   overflow-x: hidden;
 }
+@media screen and (max-width: 700px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    html {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+}
+.carousel-indicators{
+    background-color: #f00;
+}
+/*.carousel-item h5 {
+  position: absolute;
+  margin: 0;
+  color: red;
+  left: 50%;
+  bottom:350px;
+  transform: translate(-50%, -50%);
+}*/
 </style>
 
-
 </head>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WD7B8SM"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
 <body>
+
 <!-- navbar-->
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
@@ -167,22 +197,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a class="nav-link" href="#contact">CONTACT</a>
           </li>
     </ul>
-    </div>
-  </nav>
+    
+        
+      </div>
+</nav>
 
 <!--navbar ends-->
 
 <!--intoductions-->
 <header>
           
-    <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <div class="view" style="background-image: url('../static/img/back1.jpg'); background-repeat: no-repeat; background-size: cover; ">
       <div class="mask rgba-gradient align-items-center">
         <div class="container">
           <div class="row">
             <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
+              <section class="animate__animated animate__swing animate__repeat-2">
               <h1 class="h1-responsive font-weight-bold mt-sm-5">Hi folks ! Varchasa Aggarwal here .. </h1>
+              </section>
               <hr class="hr-light">
-              <h4 class="mb-4" id="mineinfo">My portfolio is a representation of all that I've learned and accomplished as a computer science engineering graduate.</h4>
+              <h4 class="mb-4" id="mineinfo">My portfolio is a representation of all that I've learned and accomplished as a computer science engineering student.</h4>
               
               <!--social icons-->
               <div class="container">
@@ -222,10 +256,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           </div>
     </div>
-            
+  
             <div class="col-md-6 col-xl-5 mt-xl-5 wow fadeInRight" data-wow-delay="0.3s">
-              <img src="../static/img/varchasa2.jpeg" alt="varchasa" class="personalphoto">
+              <img src="../static/img/pic3.jpeg" alt="varchasa" class="personalphoto">
             </div>
+            
               </div>
         </div>
       </div>
@@ -234,6 +269,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </header>
   <!--intro ends-->
   <br>
+
   <center>
 <!--about me -->
 <div id="aboutme">
@@ -253,120 +289,328 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 </center>
 
-<!--Section: articles-->
-<br id="article" >
-<section class="text-center py-5">
-	<div class="animated flash">
-    <div class="container" >
-        <h2 class="h1-responsive font-weight-bold mb-5">Articles</h2>
-        <div class="row">
+<!--article-->
+<br id="article">
+<section>
+  <h2 class="h1-responsive font-weight-bold mb-5">Articles</h2>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+    
+  </ol>
+  
+  <div class="carousel-inner">
 
-            <div class="col-lg-4 col-md-12 mb-4">
-                <div class="card card-cascade narrower">
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="../static/img/embedding.jpg"
-                            alt="Card image cap" >
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body card-body-cascade" id="articleani">
-                    <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"> Embedding multiple dash app in a single flask application</i></h5>
-                        <a class="btn btn-primary" href="https://medium.com/@varchasaaggarwal/embedding-multiple-dash-app-in-a-single-flask-application-f1bf9e938a9e" target="_blank">Click to read</a>
-                    </div>
-                </div>
+    <div class="carousel-item active">
+      <center>
+    	<div class="col-lg-4 col-md-12 mb-4">
+        <div class="card card-cascade narrower">
+            <div class="view view-cascade overlay">
+                <img class="card-img-top" src="../static/img/embedding.jpg"
+                    alt="Card image cap" >
+                    <div class="mask rgba-white-slight"></div>
+                </a>
             </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card card-cascade narrower">
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="../static/img/motivation.jpg" alt="Card image cap"><a>
-                            <div class="mask rgba-white-slight"></div>
-                        </a>
-                    </div>
-                    <div class="card-body card-body-cascade">
-                        <h5 class="pink-text pb-2 pt-1" id="articleshand"><i class="fas fa-utensils">Self Motivation — Dream it. Believe it. Build it.</i></h5>
-                        <a class="btn btn-danger" href="https://medium.com/@varchasaaggarwal/self-motivation-dream-it-believe-it-build-it-5217f1278d15" target="_blank">Click to read</a>
-                    </div>
-                </div>
+            <div class="card-body card-body-cascade" id="articleani">
+            <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"> Embedding multiple dash app in a single flask application</i></h5>
+                <a class="btn btn-primary" href="https://medium.com/@varchasaaggarwal/embedding-multiple-dash-app-in-a-single-flask-application-f1bf9e938a9e" target="_blank">Click to read</a>
             </div>
-        
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card card-cascade narrower">
-                    <div class="view view-cascade overlay">
-                        <img class="card-img-top" src="../static/img/images.jpg"
-                            alt="Card image cap">
-                            <div class="mask rgba-white-slight"></div></a>
-                    </div>
-                    <div class="card-body card-body-cascade">
-                        <h5 class="pink-text pb-2 pt-1" id="articleshand"><i class="fas fa-utensils">Positive - selfTalk</i></h5>
-                        <a class="btn btn-warning" href="https://medium.com/@varchasaaggarwal/positive-self-talk-7c2d83a93e9" target="_blank">Click to read</a>
-                    </div>
-                </div>
+        </div>
+    </div></center>
+    </div>
+
+    <div class="carousel-item">
+      <center>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card card-cascade narrower">
+              <div class="view view-cascade overlay">
+                  <img class="card-img-top" src="../static/img/motivation.jpg" alt="Card image cap"><a>
+                      <div class="mask rgba-white-slight"></div>
+                  </a>
+              </div>
+              <div class="card-body card-body-cascade">
+                  <h5 class="pink-text pb-2 pt-1" id="articleshand"><i class="fas fa-utensils">Self Motivation — Dream it. Believe it. Build it.</i></h5>
+                  <a class="btn btn-danger" href="https://medium.com/@varchasaaggarwal/self-motivation-dream-it-believe-it-build-it-5217f1278d15" target="_blank">Click to read</a>
+              </div>
+          </div>
+      </div>
+      </center>
+    	</div>
+
+    <div class="carousel-item">
+    	<center>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card card-cascade narrower">
+              <div class="view view-cascade overlay">
+                  <img class="card-img-top" src="../static/img/images.jpg"
+                      alt="Card image cap">
+                      <div class="mask rgba-white-slight"></div></a>
+              </div>
+              <div class="card-body card-body-cascade">
+                  <h5 class="pink-text pb-2 pt-1" id="articleshand"><i class="fas fa-utensils">Positive - selfTalk</i></h5>
+                  <a class="btn btn-warning" href="https://medium.com/@varchasaaggarwal/positive-self-talk-7c2d83a93e9" target="_blank">Click to read</a>
+              </div>
+          </div>
+      </div>
+      </center></div>
+
+    <div class="carousel-item">
+  <center>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card card-cascade narrower">
+          <div class="view view-cascade overlay">
+              <img class="card-img-top" src="../static/img/crypt.jpg"
+                  alt="Card image cap">
+                  <a><div class="mask rgba-white-slight"></div></a>
+          </div>
+         <div class="card-body card-body-cascade">
+              <h5 class="pink-text pb-2 pt-1" id="articleshand"><i class="fas fa-utensils">Cryptocurrency </i> </h5>
+              <a  class="btn btn-dark" href="https://cryptopython.blogspot.com/2020/06/cryptography-using-python.html" target="_blank">Click to read</a>
+          </div>
+      </div>
+  </div>
+    </center>
+  </div>
+
+    <div class="carousel-item">
+    	<center>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card card-cascade narrower">
+              <div class="view view-cascade overlay">
+                  <img class="card-img-top" src="../static/img/dashpython1.jpg"
+                      alt="Card image cap">
+                  <a><div class="mask rgba-white-slight"></div></a>
+              </div>
+              <div class="card-body card-body-cascade">
+                  <h5 class="pink-text pb-2 pt-1" id="articleshand"><i class="fas fa-utensils">Python Dash</i> </h5>
+                  <a class="btn btn-secondary" href="https://pythondash.blogspot.com/2020/05/about-dash.html" target="_blank">Click to read</a>
+              </div></div></div>
+        </center>
+    </div>
+
+    <div class="carousel-item">
+  <center>
+    <div class="col-lg-4 col-md-12 mb-4">
+      <div class="card card-cascade narrower">
+          <div class="view view-cascade overlay">
+              <img class="card-img-top" src="../static/img/gpt.jpg" alt="Card image cap" >
+                  <div class="mask rgba-white-slight"></div>
+              </a>
+          </div>
+          <div class="card-body card-body-cascade">
+          <h5 class="pink-text pb-2 pt-1" id="articleshand"><i class="fas fa-utensils">What is GPT-3 The Next Revolution AI ?</i></h5>
+              <a class="btn btn-primary" href="https://medium.com/@varchasaaggarwal/what-is-gpt-3-the-next-revolution-ai-434b47bbd406" target="_blank">Click to read</a>
+          </div>
+      </div>
+  </div>
+    </center>
+    </div>
+
+    <div class="carousel-item">
+    	<center>
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card card-cascade narrower">
+              <div class="view view-cascade overlay">
+                  <img class="card-img-top" src="../static/img/gmail.png" alt="Card image cap" >
+                      <div class="mask rgba-white-slight"></div>
+                  </a>
+              </div>
+              <div class="card-body card-body-cascade">
+              <h5 class="pink-text pb-2 pt-1" id="articleshand"><i class="fas fa-utensils">Sending Email via Flask app to Gmail</i></h5>
+                  <a class="btn btn-success" href="https://medium.com/@varchasaaggarwal/sending-email-via-flask-app-to-gmail-82cfca7922ec" target="_blank">Click to read</a>
+              </div>
+          </div>
+      </div>
+        </center>
+    </div>
+
+    <div class="carousel-item">
+    <center>
+      <div class="col-lg-4 col-md-12 mb-4">
+        <div class="card card-cascade narrower">
+            <div class="view view-cascade overlay">
+                <img class="card-img-top" src="../static/img/acceptance.jpg"
+                    alt="Card image cap" >
+                    <div class="mask rgba-white-slight"></div>
+                </a>
             </div>
+            <div class="card-body card-body-cascade" id="articleani">
+            <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils">Self Acceptance</i></h5>
+                <a class="btn btn-warning" href="https://varchasaaggarwal.medium.com/self-acceptance-a949be224eb1" target="_blank">Click to read</a>
+            </div>
+        </div>
+    </div>
+    </center>	
+    </div>
 
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card card-cascade narrower">
-                        <div class="view view-cascade overlay">
-                            <img class="card-img-top" src="../static/img/crypt.jpg"
-                                alt="Card image cap">
-                                <a><div class="mask rgba-white-slight"></div></a>
-                        </div>
-                       <div class="card-body card-body-cascade">
-                            <h5 class="pink-text pb-2 pt-1" id="articleshand"><i class="fas fa-utensils">Cryptocurrency </i> </h5>
-                            <a  class="btn btn-dark" href="https://cryptopython.blogspot.com/2020/06/cryptography-using-python.html" target="_blank">Click to read</a>
-                        </div>
-                    </div>
-                </div>
+    <div class="carousel-item">
+    <center>
+      <div class="col-lg-4 col-md-12 mb-4">
+        <div class="card card-cascade narrower">
+            <div class="view view-cascade overlay">
+                <img class="card-img-top" src="../static/img/stateofmind.jpg"
+                    alt="Card image cap" >
+                    <div class="mask rgba-white-slight"></div>
+                </a>
+            </div>
+            <div class="card-body card-body-cascade" id="articleani">
+            <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"> How to cultivate a calm state of mind ?</i></h5>
+                <a class="btn btn-info" href="https://medium.com/@varchasaaggarwal/embedding-multiple-dash-app-in-a-single-flask-application-f1bf9e938a9e" target="_blank">Click to read</a>
+            </div>
+        </div>
+    </div>
+    </center>	
+    </div>
 
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card card-cascade narrower">
-                        <div class="view view-cascade overlay">
-                            <img class="card-img-top" src="../static/img/dashpython1.jpg"
-                                alt="Card image cap">
-                            <a><div class="mask rgba-white-slight"></div></a>
-                        </div>
-                        <div class="card-body card-body-cascade">
-                            <h5 class="pink-text pb-2 pt-1" id="articleshand"><i class="fas fa-utensils">Python Dash</i> </h5>
-                            <a class="btn btn-secondary" href="https://pythondash.blogspot.com/2020/05/about-dash.html" target="_blank">Click to read</a>
-                        </div></div></div>
+    <div class="carousel-item">
+      <center>
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card card-cascade narrower">
+              <div class="view view-cascade overlay">
+                  <img class="card-img-top" src="../static/img/hiveintro.png"
+                      alt="Card image cap" >
+                      <div class="mask rgba-white-slight"></div>
+                  </a>
+              </div>
+              <div class="card-body card-body-cascade" id="articleani">
+              <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"> Hadoop-Hive </i></h5>
+                  <a class="btn btn-dark" href="https://medium.com/@varchasaaggarwal/embedding-multiple-dash-app-in-a-single-flask-application-f1bf9e938a9e" target="_blank">Click to read</a>
+              </div>
+          </div>
+      </div>
+        </center>
+    </div>
 
-                        <div class="col-lg-4 col-md-12 mb-4">
-                          <div class="card card-cascade narrower">
-                              <div class="view view-cascade overlay">
-                                  <img class="card-img-top" src="../static/img/gpt.jpg" alt="Card image cap" >
-                                      <div class="mask rgba-white-slight"></div>
-                                  </a>
-                              </div>
-                              <div class="card-body card-body-cascade">
-                              <h5 class="pink-text pb-2 pt-1" id="articleshand"><i class="fas fa-utensils">What is GPT-3 The Next Revolution AI ?</i></h5>
-                                  <a class="btn btn-primary" href="https://medium.com/@varchasaaggarwal/what-is-gpt-3-the-next-revolution-ai-434b47bbd406" target="_blank">Click to read</a>
-                              </div>
-                          </div>
-                      </div>
+    <div class="carousel-item">
+      <center>
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card card-cascade narrower">
+              <div class="view view-cascade overlay">
+                  <img class="card-img-top" src="../static/img/hivecomm.jpg"
+                      alt="Card image cap" >
+                      <div class="mask rgba-white-slight"></div>
+                  </a>
+              </div>
+              <div class="card-body card-body-cascade" id="articleani">
+              <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"> Hive Commands</i></h5>
+                  <a class="btn btn-primary" href="https://medium.com/@varchasaaggarwal/embedding-multiple-dash-app-in-a-single-flask-application-f1bf9e938a9e" target="_blank">Click to read</a>
+              </div>
+          </div>
+      </div>
+        </center>
+    </div>
 
-                      <div class="col-lg-4 col-md-12 mb-4">
-                        <div class="card card-cascade narrower">
-                            <div class="view view-cascade overlay">
-                                <img class="card-img-top" src="../static/img/gmail.png" alt="Card image cap" >
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
-                            </div>
-                            <div class="card-body card-body-cascade">
-                            <h5 class="pink-text pb-2 pt-1" id="articleshand"><i class="fas fa-utensils">Sending Email via Flask app to Gmail</i></h5>
-                                <a class="btn btn-success" href="https://medium.com/@varchasaaggarwal/sending-email-via-flask-app-to-gmail-82cfca7922ec" target="_blank">Click to read</a>
-                            </div>
-                        </div>
-                    </div>
-                      </div></div></div>
+
+
+
+  </div>
+
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 </section>
 
+
+<!--project-->
 <br id="project">
+<center>
 <section class="text-center py-5">
     <div class="animated flash">
         <div class="container">
                 <h2 class="h1-responsive font-weight-bold mb-5">Projects</h2>
         <!--Sentiment analysis-->
         <div class="row">
+
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card border-success mb-3" style="max-width: 20rem;">
+                <div class="card-header">Developed in 2021</div>
+                <div class="card-body text-success">
+                  <a href="https://github.com/varchasa/informaton-agreegator" target="_blank" class="text-success">
+                  <h5 class="card-title" id="projecthand">Information Agreegator</h5>
+                  </a>
+                  <p class="card-text text-dark">It collects some information about news, articles,etc. 
+                    from all over the web using rss feeds.</p>
+                </div>
+              </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card border-info mb-3" style="max-width: 20rem;">
+                <div class="card-header">Developed in 2020</div>
+                <div class="card-body text-info">
+                  <a href="https://github.com/varchasa/Pandas" target="_blank" class="text-info">
+                  <h5 class="card-title" id="projecthand">Pandas</h5>
+                  </a>
+                  <p class="card-text text-dark">Explained all the pandas functions with their comments associated with it.</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card border-secondary mb-3" style="max-width: 20rem;">
+                <div class="card-header">Developed in 2020</div>
+                <div class="card-body text-secondary">
+                  <a href="https://github.com/varchasa/visualisation" target="_blank" class="text-secondary">
+                  <h5 class="card-title" id="projecthand">Visualization</h5>
+                  </a>
+                  <p class="card-text text-dark">Some plots have been used by seaborn library to establish 
+                    a relation between two variables.</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Developed in 2020</div>
+                <div class="card-body text-dark">
+                  <a href="https://github.com/varchasa/numpy" target="_blank" class="text-dark">
+                  <h5 class="card-title" id="projecthand">Numpy</h5>
+                  </a>
+                  <p class="card-text text-dark">Explained all the numpy functions with their comments associated with it.</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card border-danger mb-3" style="max-width: 20rem;">
+                <div class="card-header">Developed in 2020</div>
+                <div class="card-body text-danger">
+                  <a href="https://github.com/varchasa/bank-credit-card-analysis" target="_blank" class="text-danger">
+                    <h5 class="card-title" id="projecthand">Bank credit card analysis</h5>
+                  </a>
+                  <p class="card-text text-dark">Predict whether the credit card using 
+                    the customer is going to default or not.</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card border-primary mb-3" style="max-width: 20rem;">
+                <div class="card-header">Developed in 2020</div>
+                <div class="card-body text-primary">
+                  <a href="https://github.com/varchasa/Planet-And-Life" target="_blank" class="text-primary">
+                  <h5 class="card-title" id="projecthand">Planet and life</h5>
+                  </a>
+                  <p class="card-text text-dark">created a website about how planets and life are inter-related.</p>
+                </div>
+              </div>
+          </div>
 
           <div class="col-lg-4 col-md-12 mb-4">
             <div class="card border-warning mb-3" style="max-width: 20rem;">
@@ -393,10 +637,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
 
             <div class="col-lg-4 col-md-12 mb-4">
-                <div class="card border-primary mb-3" style="max-width: 20rem;">
+                <div class="card border-dark mb-3" style="max-width: 20rem;">
                     <div class="card-header">Developed in 2020</div>
                     <div class="card-body text-primary">
-                      <a href="https://github.com/varchasa/IBM_Hackathon_smartInternz" target="_blank" class="text-primary">
+                      <a href="https://github.com/varchasa/IBM_Hackathon_smartInternz" target="_blank" class="text-dark">
                       <h5 class="card-title" id="projecthand">Sentiment Analysis of COVID-19 Tweets</h5>
                       </a>
                       <p class="card-text text-dark">Build Predictive analytics dashboard of COVID-19 tweets along with lockdown response of different states of India.</p>
@@ -406,10 +650,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!--happiness report-->
         <div class="col-lg-4 col-md-12 mb-4">
-              <div class="card border-light mb-3" style="max-width: 20rem;">
+              <div class="card border-primary mb-3" style="max-width: 20rem;">
                 <div class="card-header">Developed in 2020</div>
                 <div class="card-body">
-                  <a href="https://github.com/varchasa/World_happiness_report" target="_blank" class="text-dark">
+                  <a href="https://github.com/varchasa/World_happiness_report" target="_blank" class="text-primary">
                   <h5 class="card-title" id="projecthand">World Happiness Report</h5></a>
                   <p class="card-text text-dark">Showed analysis of world happiness report of different types of parameters. </p>
                 </div>
@@ -477,7 +721,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               
         </div>
         <div class="col-lg-4 col-md-12 mb-4">
-          <div class="card border-dark mb-3" style="max-width: 20rem;">
+          <div class="card border-info mb-3" style="max-width: 20rem;">
             <div class="card-header">Developed in 2018</div>
             <div class="card-body text-info">
               <a href="https://github.com/varchasa/P.A.-of-your-computer" class="text-info" target="_blank">
@@ -485,15 +729,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <p class="card-text text-dark">This AI Assistant can perform several tasks like opening and closing any application of your computer with voice command.</p>
             </div>
           </div>
+              
         </div>
+
             </div><!--row-->
             </div>
+            
+
     </div>
     <!-- Container -->
-</section>
 
+</section>
+</center>
 <!--Section: certificate-->
 <br id="certificate">
+<center>
 <section class="text-center py-5">
   <h2 class="h1-responsive font-weight-bold mb-5">Certifications</h2>
   <div class="card-columns" >
@@ -535,6 +785,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
+    
+    
     <!--iitdelhi-->
     <div class="card text-black text-center p-3">
       <div class="card-body">
@@ -548,7 +800,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     
- <!--TCS-->
+
+    <!--TCS-->
     <div class="card">
     
       <img class="card-img-top" src="../static/img/tcs.jpg" alt="Card image cap">
@@ -627,7 +880,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </a>
     </div>
 
-  <!--IBM-->
+
+
+    <!--IBM-->
     <div class="card">
       <img class="card-img-top" src="../static/img/ibm.png" alt="Card image cap">
       <div class="card-body">
@@ -641,6 +896,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
+    
+    
     <!--KIET-->
     <div class="card bg-secondary text-black text-center p-3">
       <div class="card-body">
@@ -663,11 +920,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
- </div>
+
+  </div>
   </section>
+  </center>
 <br>
 
+
 <!--BADGES-->
+<center>
 <section>
   <div class="card bg-dark" id="badges">
     <center>
@@ -680,24 +941,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="https://www.youracclaim.com/badges/e60c2619-9155-4abd-bd36-a991024d641d?source=linked_in_profile" target="_blank" class="badge badge-danger">Enterprise Design Thinking</a>
         <a href="https://www.hackerrank.com/varchasaaggarwal" target="_blank" class="badge badge-warning">Gold Badge for python</a>
         <a href="https://www.hackerrank.com/varchasaaggarwal" target="_blank" class="badge badge-info">Silver badge for problem solving</a>
-        <a href="https://credly.com/credit/14243055" class="badge badge-light" target="_blank">Progressive web app developement</a>
+        <a href="https://credly.com/credit/14243055" class="badge badge-light">Progressive web app developement and research</a>
         
- </h4>
+
+
+      </h4>
+      
     </div>
     </center>
   </div>
-</section>
-
+  </section>
+  </center>
+  
 <!--skills-->
+
 <br id="skill">
+<center>
 <section  class="text-center py-5">
     <h2 class="h1-responsive font-weight-bold mb-51">Skills</h2>
-    <img src="../static/img/skills3.jpg" alt="skills">
+    <img src="../static/img/skills3.jpg" alt="skills" class="skillimg">
 
 
 </section>
+</center>
 
 <br id="exp">
+<center>
 <section class="text-center py-5">
   <h2 class="h1-responsive font-weight-bold mb-51">Experience</h2>
   <div class="view" >
@@ -717,15 +986,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           
           <div class="col-md-6 col-xl-5 mt-xl-5 wow fadeInRight" data-wow-delay="0.3s">
-            <img src="../static/img/exp.jpg" alt="Experience with microsoft">
+            <img class="img-fluid" src="../static/img/exp.jpg" alt="Experience with microsoft">
           </div>
             </div>
       </div>
     </div>
       </div>
   </section>
+  </center>
+
+
 
 <!-- Default form contact -->
+<center>
 <section id="contact">
   <div class="jumbotron">
   <form action="{{url_for('send_message')}}" method="POST" class="text-center border border-light p-5">
@@ -743,6 +1016,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
       <div class="custom-control custom-checkbox mb-4">
           <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+          
       </div>
       
       <button type="submit" id="send" class="btn btn-warning btn-block" data-toggle="modal" data-target="#exampleModalCenter">
@@ -768,10 +1042,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
-</div>
+
+    </div>
     </form>
     </div>
     </section>
+    </center>
+
+  
 
 </body>
 </html>
