@@ -1,8 +1,10 @@
-Flask >= 1.1.2
+Flask == 2.0.1
 gunicorn==19.9.0
-itsdangerous==1.1.0
-Jinja2==2.10.1
-MarkupSafe==1.1.1
-Werkzeug==0.15.5
-smtplibaio == 2.1.2.post1
-flask_mail >=0.9.1
+itsdangerous>=2.0
+Jinja2>=3.0
+MarkupSafe>=2.0
+Werkzeug>=2.0
+firebase==3.0.1
+python-jwt == 3.3.0
+six==1.16.0
+gcloud == 0.18.3
