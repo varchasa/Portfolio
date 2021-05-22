@@ -9,3 +9,4 @@ python-jwt == 3.3.0
 six==1.16.0
 gcloud == 0.18.3
 sseclient== 0.0.27
+crypto == 1.4.1
