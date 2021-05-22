@@ -2,7 +2,25 @@
 <html lang="en">
 
 <head>
-  <title>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WD7B8SM');</script>
+	
+<!-- End Google Tag Manager -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179161820-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-179161820-1');
+</script>
+
+<title>
     Varchasa Aggarwal</title>
 
   <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='/styles/main.css') }}">
@@ -13,7 +31,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src=  "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">   </script>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Sofia|Cedarville Cursive|Marck Script|Merienda One|Vast Shadow|Work Sans|Niconne|Pacifico|Kaushan Script|Capriola|Source Code Pro">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Padauk|Grenze Gotisch|Josefin Sans|Roboto|Sofia|Cedarville Cursive|Marck Script|Merienda One|Vast Shadow|Work Sans|Niconne|Pacifico|Kaushan Script|Capriola|Source Code Pro">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -23,7 +41,6 @@
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
 </head>
 <body>
 
@@ -42,6 +59,9 @@
     
           <li class="nav-item active">
             <a class="nav-link" href="#aboutme">ABOUT ME <span class="sr-only"></span></a>
+          </li>
+          <li>
+            <a class="nav-link" href="#activities">ACTIVITIES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#article">ARTICLES</a>
@@ -88,7 +108,7 @@
               <h4 class="mb-4" id="mineinfo">My portfolio is a representation of all that I've learned and accomplished as a computer science engineering student.</h4>
               
               <!--social icons-->
-              <div class="container">
+              <div class="container" id="icon">
                 <div class="social-icon">
                     <a href="https://www.linkedin.com/in/varchasaaggarwal06/" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
@@ -157,15 +177,54 @@
     </div>
 </div>
 </center>
+<br id="activities">
+<br><br>
+<center>
+  <h2 id="heading-head">My Recent Activities</h2><br>
+<section>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <h5 class="card-title" style="font-family:Padauk;">Writer at Nerd for Tech Medium Publication</h5>
+          <hr style="width:35%;text-align:left;margin-left:0;border-top: 1px solid lightblue;">
+      <p class="card-text" style="font-family:Josefin Sans;">Got recognition by Nerd for tech as writer for their medium publication.</p>
+      <a href="https://www.linkedin.com/posts/nerdfortech_article-nerdfortech-experience-activity-6798281825014845440-B9dS" target="_blank" class="card-link">
+        <button class="btn btn-success">Have a look!</button></a>
+      
+  
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-6">
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <h5 class="card-title" style="font-family:Padauk;">Speaker at an event of Deeplearning.AI</h5>
+          <hr style="width:35%;text-align:left;margin-left:0;border-top: 1px solid lightblue;">
+          
+      <p class="card-text" style="font-family:Josefin Sans;">Invited as a speaker of PIE and AI series by Deeplearning.AI on the topic "Data Visualization Aurora"</p>
+      <a href="#" class="card-link">
+        <button class="btn btn-info">Link will be updated soon.</button></a>
+      
+  
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+</center>
 
 <!--article-->
 <br id="article">
+<br><br>
 <section>
-  <h2 class="h1-responsive font-weight-bold mb-5">Articles</h2>
+  <h2 id="heading-head">Articles</h2><br>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
@@ -401,7 +460,7 @@
 <section class="text-center py-5">
     <div class="animated flash">
         <div class="container">
-                <h2 class="h1-responsive font-weight-bold mb-5">Projects</h2>
+                <h2 id="heading-head">Projects</h2>
         <!--Sentiment analysis-->
         <div class="row">
 
@@ -616,7 +675,7 @@
 <br id="certificate">
 <center>
 <section class="text-center py-5">
-  <h2 class="h1-responsive font-weight-bold mb-5">Certifications</h2>
+  <h2 id="heading-head">Certifications</h2>
   <div class="card-columns" >
     
     <!--IBMHC-->
@@ -795,15 +854,17 @@
   </div>
   </section>
   </center>
-<br>
 
+
+<br id="badges">
+<br>
 
 <!--BADGES-->
 <center>
 <section>
-  <div class="card bg-dark" id="badges">
+  <div class="card bg-dark" >
     <center>
-    <h3 class="card-header text-light">BADGES</h3>
+    <h3 class="card-header text-light" id="heading-head">Badges</h3>
     <div class="card-body">
       <h4 class="card-title">
         <a href="https://www.youracclaim.com/badges/1fb67221-04b0-4f75-b5e9-cd4453eee741?source=linked_in_profile" target="_blank" class="badge badge-primary">Data Science foundation</a>
@@ -829,7 +890,7 @@
 <br id="skill">
 <center>
 <section  class="text-center py-5">
-    <h2 class="h1-responsive font-weight-bold mb-51">Skills</h2>
+    <h2 id="heading-head">Skills</h2>
     <img src="../static/img/skills3.jpg" alt="skills" class="skillimg">
 
 
@@ -839,7 +900,7 @@
 <br id="exp">
 <center>
 <section class="text-center py-5">
-  <h2 class="h1-responsive font-weight-bold mb-51">Experience</h2>
+  <h2 id="heading-head">Experience</h2>
   <div class="view" >
     <div class="mask rgba-gradient align-items-center">
       <div class="container">
@@ -920,7 +981,13 @@
     </section>
     </center>
 
-  
 
+  
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+    
 </body>
 </html>
