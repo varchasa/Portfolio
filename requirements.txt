@@ -1,7 +1,7 @@
 Flask == 2.0.1
-gunicorn==19.9.0
-itsdangerous>=2.0
-Jinja2>=3.0
+gunicorn ==19.9.0
+itsdangerous >=2.0
+Jinja2 >=3.0
 MarkupSafe>=2.0
 Werkzeug>=2.0
 firebase==3.0.1
