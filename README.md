@@ -2,4 +2,4 @@
 Created Personal Website using flask. 
 
 ## Deployed using heroku 
-link - http://varchasaaggarwal.herokuapp.com/
+link - https://varchasaaggarwal.herokuapp.com/
