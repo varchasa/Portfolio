@@ -1,38 +1,7 @@
 .animate__animated.animate__flash {
   --animate-duration: 2s;
 }
-.carousel-control-prev
-{
-width: 400px;
-}
-.carousel-control-next
-{
-width: 400px;
-}
-.carousel-control-prev,
-.carousel-control-next{
-height: 50px;
-width: 50px;
-outline: color-white;
-background-size: 100%, 100%;
-border-radius: 50%;
-border: 1px solid color-white;
-background-color: color-white;
-}
-          
-.carousel-control-prev-icon { 
-background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); 
-width: 30px;
-height: 48px;
-}
-.carousel-control-next-icon { 
-background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-width: 30px;
-height: 48px;
-}
-        
-          
-          
+
 .personalphoto{
 border-radius: 50%;
 height:auto;
@@ -81,6 +50,11 @@ font-size: x-large;
 font-family: "Sofia";
 font-size: 42px;
 }
+#heading-head
+{
+  font-family: "Grenze Gotisch";
+font-size: 60px;
+}
 #send
 {
 font-size: x-large;
@@ -107,15 +81,49 @@ line-height: 1;
 text-align: center;
 overflow-x: hidden;
 }
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 500px) {
 body {
 overflow-x: hidden !important;
+
 }
 html {
 max-width: 100% !important;
 overflow-x: hidden !important;
 }
 }
+.carousel-control-prev-icon { 
+  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); 
+  width: 30px;
+  height: 78px;
+  }
+  .carousel-control-next-icon { 
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  width: 30px;
+  height: 48px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next{
+  height: auto;
+  width: 50px;
+  outline: color-white;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid color-white;
+  background-color: color-white;
+  
+  }
+    
+  @media screen and (max-width: 700px) {
+    #icon
+    {
+      display: flex;
+      justify-content: space-around;
+  
+    }
+  }
+
+
 .carousel-indicators{
 background-color: #f00;
 }
